@@ -78,7 +78,7 @@ else
     <br>
     <input type="submit" value="Modificar" />
     <br />
-    <a  href="mclientes.php">Regresar</a>
+    <a  href="menu.php">Regresar</a>
     </form>
 <?php
 }

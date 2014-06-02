@@ -14,10 +14,6 @@ $Direccion=$_POST["Direccion"];
 $Telefono=$_POST["Telefono"];
 $Celular=$_POST["Celular"];
 $Email=$_POST["Email"];
-//---------------VALORES DE EL DETALLE DE LA PRODUCTO----------------------------
-$Codigo=$_POST["Codigo"];
-$NombreP=$_POST["NombreP"];
-$Precio=$_POST["Precio"];
 //-------------inclucion de datos de cliente----------------------------------
 include("../modelo/cliente.php");
 include("../control/ctrcliente.php");
@@ -44,24 +40,6 @@ include("../control/ctrcliente.php");
         {
             die("Error en la consulta1: ".mysqli_error($error));
         }
-//-------------inclucion de datos de producto----------------------------------
-  include("../modelo/producto.php");
-  include("../control/ctrproducto.php");
-  $ObjProducto=new Producto();
-  $ObjCtrProducto=new CtrProducto($ObjCliente);
-  foreach($Codigo as $j=>$v)
-  {
-      $ObjProducto=new Detalle();
-      $ObjCtrDetalle=new CtrDetalle($ObjDetalle);
-      $ObjProducto->setCodigo($Codigo[$j]);
-      $ObjProducto->setNombreP($NombreP[$j]);
-      $ObjProducto->setPrecio($precio[$j]);
-      $error=$ObjCtrDetalle->insertarproducto();
-      if($error)
-      {
-          die("Error en la consulta: ".mysqli_error($error));
-      }
-  }
 //------------------------------- ----------------------------------------------
             echo "<script languge='javascript'>alert('Registro Almacenado')</script>";
             echo "<script languge='javascript'>location.href='mclientes.php'</script>";
@@ -69,7 +47,7 @@ include("../control/ctrcliente.php");
         else
         {
             echo "Registro ya existe";
-            echo "<br /> <a href='mclientes.php'>Menu Clientes</a>";
+            echo "<br /> <a href='menu.php'>Menu Clientes</a>";
 
         }
 ?>

@@ -33,7 +33,7 @@ if(!$resultado)
     die("Error en la consulta: ".mysqli_error($error));
 }
 echo "<script languge='javascript'>alert('Registro Actualizado')</script>";
-echo "<script languge='javascript'>location.href='mclientes.php'</script>";
+echo "<script languge='javascript'>location.href='menu.php'</script>";
 ?>
 </body>
 </html>

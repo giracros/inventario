@@ -75,7 +75,7 @@ else
     </table>
     <br>
      <input type="submit" value="Modificar" /><br />
-    <a class='enlaceboton' href="mclientes.php">Menu Cliente</a>
+    <a class='enlaceboton' href="menu.php">Menu Cliente</a>
     </form>
     <br />
 <?php

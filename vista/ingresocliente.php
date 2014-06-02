@@ -41,30 +41,13 @@ else
     <td>Email</td>
     <td colspan="3"><input name="Email" id="Email" size="30"/></td>
   </tr>
-  <tr >
-        <td class='barraroja' align="left"><b>Codigo </b></td>
-        <td class='barraroja' align="left"><b>Nombre Producto</b></td>
-        <td class='barraroja' align="left"><b>Precio</b></td>
-    </tr>
-  <tr>
-        <td width="70" align="left"><input readonly size="4" name="Codigo[]" id="Codigo" value="0"></td>
-        <td width="70" align="left"><input readonly size="6" name="NombreP[]" id="NombreP" value="0"></td>
-        <td width="70" align="left"><input size="4" name="Precio[]" id="Precio" value=""></td>
-        <td width="20" align="left"><a href="javascript:nuevoajax('adicionarproducto.php','_AdicionarProducto','')"><img width='20' src="../imagenes/actualizar.ico"></a></td>
-  </tr>
-     <tr>
-        <td width="783" colspan="4" align="left">
-            <div id="_AdicionarProducto" ></div>
-        </td>
-    </tr>
      <tr>
     <td colspan="4" align="center"><input type="submit" name="Guardar" value="Guardar" onclick="return validartexto()"/></td>
   </tr>
-
 </table>
 </form>
 <br />
- <a href="mclientes.php" class='enlaceboton'>Menu Clientes</a>
+ <a href="menu.php" class='enlaceboton'>Menu Clientes</a>
  </center>
  <?php
  }

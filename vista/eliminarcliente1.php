@@ -45,7 +45,7 @@ if($error)
     die("Error en la consutla: ".mysqli_error($error));
 }
             echo "<script languge='javascript'>alert('Registro Eliminado')</script>";
-            echo "<script languge='javascript'>location.href='mclientes.php'</script>";
+            echo "<script languge='javascript'>location.href='menu.php'</script>";
 }
 ?>
 </body>

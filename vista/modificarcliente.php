@@ -19,7 +19,7 @@
 </table>
 </form>
 <br />
- <a href="mclientes.php">Menu Clientes</a>
+ <a href="menu.php">Menu Clientes</a>
 
 </body>
 </html>

@@ -1,50 +1,56 @@
 <?php
-session_start();//se debe poner para que continue con la sesi�n que abri, si no existe la crea
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title></title>
-<link href="../css/bootstrap.css" rel="stylesheet" type="text/css"/>
-</head>
-<body>
-<?php
-if(!isset($_SESSION["_PKUsuario"]))//pregunto por variable SESSION
-{
-echo "<script languge='javascript'>alert('No te has autenticado') </script>";
-echo "<script languge='javascript'>location.href='../index.php'</script>";
-}
-else
-{
-$fechaOld= $_SESSION["ultimoAcceso"]; //para caducidad
-    $ahora = date("Y-n-j H:i:s");
-    $tiempo_transcurrido = (strtotime($ahora)-strtotime($fechaOld));
-    if($tiempo_transcurrido >= 60) { //comparamos el tiempo y verificamos si pasaron 10 minutos o m�s
-      include "../scripts/finalizarsesion.php";
-    }
-    else
-    {       //sino, actualizo la fecha de la sesi�n
-        $_SESSION["ultimoAcceso"] = $ahora; //para caducidad
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CRUD PHP">
+    <meta name="author" content="Daniel Fuentes">
+    <link rel="shortcut icon" href="../img/glyphicons_086_display.png">
+    <title>Menu CRUD</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/starter-template.css" rel="stylesheet">
+     <script language="javascript" type="text/javascript" src="../scripts/ajax.js"></script>
+        <script language="javascript" type="text/javascript" src="../scripts/validartexto.js"></script> 
+  </head>
 
-?>
-  <div style="float: left;">Usted est� en el sistema como: <b><?php echo $_SESSION["_PKUsuario"]." ====> ".$_SESSION["_Nombre"]?></b></div>
-  <div align="right"><a href="../scripts/finalizarsesion.php"><b>Finalizar Sesi�n</b></a></div>
-  <br />
+  <body>
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">CRUD Php</a>
+        </div>
+        <div class="collapse navbar-collapse" id="menudesplegable">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="listarclientes.php">Listar</a></li>
+            <li><a href="consultarcliente.php">Consultar</a></li>
+            <li><a href="ingresocliente.php">Crear</a></li>
+            <li><a href="modificarcliente.php">Modificar</a></li>
+            <li><a href="eliminarcliente.php">Eliminar</a></li>
+            <li><a href="../scripts/finalizarsesion.php"><b>Cerrar Sesion</b></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-  <div id="menudesplegable">
-    <table align="center">
-      <tr>
-        <td><a href="mclientes.php" title="Menu Cliente">Cliente</a></td>
-        <td><a href="#2" title="Menu Empleado">Empleado</a></td>
-        <td><a href="#3" title="Menu Marca">Marca</a></td>
-        <td><a href="#4" title="Menu Producto">Producto</a></td>
-        <td><a href="#5" title="Menu Ventas">Ventas</a></td>
-      </tr>
-    </table>
-  </div>
-  <?php
-  }
-}
-?>
- </body>
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>Bienvenido</h1>
+        <p class="lead">Parcial Final Programacion Web 1.<br>Puede crear, consultar, modificar, eliminar y listar una agenda</p>
+      </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
 </html>

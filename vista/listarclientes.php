@@ -53,13 +53,13 @@ include("../control/ctrcliente.php");
         ?>
         </table>
         <?php
-              echo "<a  href='mclientes.php'>[ Menu Cliente ]</a>";
+              echo "<a  href='menu.php'>[ Menu Cliente ]</a>";
         }
         else
         {
            echo "<center> <br /><br /><br /><br /><br />No hay registros de clientees encontrados <br>";
 
-           echo "<a href='mclientes.php' >[ Menu Cliente ]</a></center>";
+           echo "<a href='menu.php' >[ Menu Cliente ]</a></center>";
         }
 ?>
 </body>
