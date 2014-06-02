@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <title></title>
 <link href="../css/bootstrap.css" rel="stylesheet" type="text/css"/>

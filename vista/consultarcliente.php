@@ -1,7 +1,8 @@
 <?php
 session_start();//se debe poner para que continue con la sesión que abri, si no existe la crea
 ?>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <title></title>
    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css"/>
