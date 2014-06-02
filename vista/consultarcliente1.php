@@ -43,7 +43,7 @@ session_start();
     <div class="container">
 
       <div class="starter-template">
-        <h1>Consulta Personas</h1>
+        <h1>Consulta de Registros</h1>
         <?php
 $Cedula=$_POST["Cedula"];
 //-------------inclucion de datos de cliente----------------------------------

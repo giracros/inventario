@@ -43,11 +43,11 @@ session_start();
         <div class="container">
 
             <div class="starter-template">
-                <h1>Eliminar</h1>
+                <h1>Eliminar Registro</h1>
                 <form name="Cliente" action="eliminarcliente1.php" method="post" role="form">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Cedula</label>
-                        <input name="Cedula" size="30" class="form-control" id="cedula" placeholder="Ingrese la cedula">
+                        <label for="exampleInputEmail1">Ingrese la Cedula a eliminar</label>
+                        <input name="Cedula" size="30" class="form-control" id="cedula" placeholder="Cedula">
                     </div>
                     <button type="submit" name="Consultar" value="Consultar" class="btn btn-default">Submit</button>
                 </form>
