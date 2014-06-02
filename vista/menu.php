@@ -4,7 +4,7 @@ session_start();//se debe poner para que continue con la sesi�n que abri, si n
 <html>
 <head>
 <title></title>
-   <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+<link href="../css/bootstrap.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <?php

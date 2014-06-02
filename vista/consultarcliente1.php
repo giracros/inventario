@@ -1,7 +1,7 @@
 <html>
 <head>
 <title></title>
-   <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+   <link href="../css/bootstrap.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 

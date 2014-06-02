@@ -1,8 +1,7 @@
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title></title>
-   <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+<link href="../css/bootstrap.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
  

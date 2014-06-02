@@ -3,9 +3,8 @@ session_start();//se debe poner para que continue con la sesión que abri, si no
 ?>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title></title>
-   <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+   <link href="../css/bootstrap.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
   <h1>Consultar Cliente</h1>
