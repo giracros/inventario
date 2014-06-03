@@ -80,10 +80,10 @@ session_start();
                     }
 //------------------------------- ----------------------------------------------
                     echo "<script languge='javascript'>alert('El Registro ha sido Almacenado exitosamente')</script>";
-                    echo "<script languge='javascript'>location.href='menu.php'</script>";
+                    echo "<script languge='javascript'>location.href='ingresocliente.php'</script>";
                 } else {
                     echo "El Registro ya existe";
-                    echo "<br /> <a href='menu.php'>Menu Clientes</a>";
+                    echo "<br /> <a href='menu.php'>Regresar</a>";
                 }
                 ?>
                 

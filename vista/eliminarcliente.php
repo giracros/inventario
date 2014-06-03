@@ -46,10 +46,9 @@ session_start();
                 <h1>Eliminar Registro</h1>
                 <form name="Cliente" action="eliminarcliente1.php" method="post" role="form">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Ingrese la Cedula a eliminar</label>
-                        <input name="Cedula" size="30" class="form-control" id="cedula" placeholder="Cedula">
+                        <input name="Cedula" size="30" class="form-control" id="cedula" placeholder="Ingrese la Cedula">
                     </div>
-                    <button type="submit" name="Consultar" value="Consultar" class="btn btn-default">Submit</button>
+                    <button type="submit" name="Consultar" value="Consultar" class="btn btn-default">Eliminar</button>
                 </form>
             </div>
             

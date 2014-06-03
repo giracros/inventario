@@ -43,7 +43,7 @@ session_start();
         <div class="container">
 
             <div class="starter-template">
-                <h1>Eliminar Personas</h1>
+                <h1>Eliminar Registro</h1>
                 <?php
                 if (isset($_POST["Cedula"])) {
                     $Cedula = $_POST["Cedula"];
@@ -68,7 +68,7 @@ session_start();
                         <div class="form-group">
                             <label>El registro no se ha encontrado</label>
                         </div>
-                        <a href="menu.php">Menu Clientes</a>
+                        <a href="eliminarcliente.php">Regresar</a>
                     </form>
 
 

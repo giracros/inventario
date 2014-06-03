@@ -41,19 +41,15 @@ session_start();
                 </div>
             </div>
         </div>
-
         <div class="container">
-
             <div class="starter-template">
                 <h1>Consultar Registro</h1>
                 <form name="Cliente" action="consultarcliente1.php" method="post" role="form">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Ingrese la Cedula a consultar</label>
-                        <input name="Cedula" size="30" class="form-control" id="cedula" placeholder="Cedula">
+                        <input name="Cedula" size="30" class="form-control" id="cedula" placeholder="Ingrese la Cedula">
                     </div>
-                    <button type="submit" name="Consultar" value="Consultar" class="btn btn-default">Submit</button>
+                    <button type="submit" name="Consultar" value="Consultar" class="btn btn-default">Buscar</button>
                 </form>
-
             </div>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
             <script src="../js/bootstrap.min.js"></script>

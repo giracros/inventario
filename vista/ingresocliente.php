@@ -49,47 +49,37 @@ if (!isset($_SESSION["_PKUsuario"])) {
                     <h1>Guardar Registro</h1>
                     <center>
                         <form name="Frmcliente" action="guardarcliente.php" method="post">
+
                             <input type="hidden" name="Pos[]" id="Pos" value="">
-                            <table class="table table-striped">
-                                <tr>
-                                    <td>Cedula</td>
-                                    <td colspan="3"><input name="Cedula" id="Cedula" size="30"/></td>
-                                </tr>
-                                <tr>
-                                    <td >Nombres</td>
-                                    <td colspan="3"><input name="Nombres" size="30"/></td>
-                                </tr>
-                                <tr>
-                                    <td>Apellidos</td>
-                                    <td colspan="3"><input name="Apellidos" size="30"/></td>
-                                </tr>
-                                <tr>
-                                    <td>Direccion</td>
-                                    <td colspan="3"><input name="Direccion" size="30" /></td>
-                                </tr>
-                                <tr>
-                                    <td>Telefono</td>
-                                    <td colspan="3"><input name="Telefono" size="30"/></td>
-                                </tr>
-                                <tr>
-                                    <td>Celular</td>
-                                    <td colspan="3"><input name="Celular" size="30"/></td>
-                                </tr>
-                                <tr>
-                                    <td>Email</td>
-                                    <td colspan="3"><input name="Email" id="Email" size="30"/></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="4" align="center"><input type="submit" name="Guardar" value="Guardar" onclick="return validartexto()"/></td>
-                                </tr>
-                            </table>
+                            <div class="form-group">
+                                <input name="Cedula" size="30" class="form-control" id="cedula" placeholder="Cedula">
+                            </div>
+                             <div class="form-group">
+                                <input name="Nombres" size="30" class="form-control" id="cedula" placeholder="Nombres">
+                            </div>
+                             <div class="form-group">
+                                <input name="Apellidos" size="30" class="form-control" id="cedula" placeholder="Apellidos">
+                            </div>
+                             <div class="form-group">
+                                <input name="Direccion" size="30" class="form-control" id="cedula" placeholder="Direccion">
+                            </div>
+                             <div class="form-group">
+                                <input name="Telefono" size="30" class="form-control" id="cedula" placeholder="Telefono">
+                            </div>
+                             <div class="form-group">
+                                <input name="Celular" size="30" class="form-control" id="cedula" placeholder="Celular">
+                            </div>
+                             <div class="form-group">
+                                <input name="Email" size="30" class="form-control" id="cedula" placeholder="Email">
+                            </div>
+                            <button type="submit" name="Guardar" value="Guardar" class="btn btn-default" onclick="return validartexto()">Guardar</button>
                         </form>
                         <br />
-                        <a href="menu.php" class='enlaceboton'>Menu Clientes</a>
+                        <a href="menu.php" class='enlaceboton'>Menu</a>
                     </center>
-    <?php
-}
-?>
+                    <?php
+                }
+                ?>
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
