@@ -1,7 +1,7 @@
 function validartexto()
 {
 var cedula=document.getElementById("cedula").value;
-if(cedula=="")
+if(cedula==="")
 {
 alert("Ingrese un valor");
 document.getElementById("cedula").focus();

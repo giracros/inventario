@@ -13,7 +13,7 @@ class CtrAcceso
         $PKUsuario=$this->ObjAcceso->getPKUsuario();
         $Password=$this->ObjAcceso->getPassword();
         //-------ARCHIVO PARA CONECTARNOS A LA BASE DE DATOS--------------------
-        include("../conexionbd/conexion.php");
+        include("../conexion/conexion.php");
         //---------CONSULTA PARA VALIDAR EL USUARIO-----------------------------
         $resultado=mysqli_query($conexion,"call validarusuario('$PKUsuario','$Password')");
         if(!$resultado)

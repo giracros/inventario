@@ -3,7 +3,7 @@ function validartexto()
   var cedula=document.getElementById("Cedula").value;
   var correo=document.getElementById("Email").value;
   var retorno=true;
-  if(cedula=="")
+  if(cedula==="")
   {
     alert("Ingrese un valor");
     document.getElementById("Cedula").focus();

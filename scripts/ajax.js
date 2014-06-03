@@ -1,5 +1,5 @@
 // Documento JavaScript
-// Esta función cargará las paginas
+// Esta funciï¿½n cargarï¿½ las paginas
 function llamarasincrono (url, id_contenedor,j)
 {
 	var pagina_requerida = false;
@@ -18,7 +18,7 @@ function llamarasincrono (url, id_contenedor,j)
 		}
 		catch (e)
 		{
-			// en caso que sea una versión antigua
+			// en caso que sea una versiï¿½n antigua
 			try
 			{
 				pagina_requerida = new ActiveXObject ("Microsoft.XMLHTTP");
@@ -32,18 +32,18 @@ function llamarasincrono (url, id_contenedor,j)
 		return false;
 		pagina_requerida.onreadystatechange = function ()
 		{
-			// función de respuesta
+			// funciï¿½n de respuesta
 			cargarpagina (pagina_requerida, id_contenedor);
 		}
 		pagina_requerida.open ('GET', url, true);
-		// asignamos los métodos open y send
+		// asignamos los mï¿½todos open y send
 		pagina_requerida.send (null);
 }
-// todo es correcto y ha llegado el momento de poner la información requerida
+// todo es correcto y ha llegado el momento de poner la informaciï¿½n requerida
 // en su sitio en la pagina xhtml
 function cargarpagina (pagina_requerida, id_contenedor)
 {
-	if (pagina_requerida.readyState == 4 && (pagina_requerida.status == 200 || window.location.href.indexOf ("http") == - 1))
+	if (pagina_requerida.readyState === 4 && (pagina_requerida.status === 200 || window.location.href.indexOf ("http") === - 1))
 	document.getElementById (id_contenedor).innerHTML = pagina_requerida.responseText;
 }
 //-----------FUNCION PARA MOSTRAR LAS TABLAS INVISIBLES----------------------------------

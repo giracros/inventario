@@ -18,7 +18,7 @@ class CtrCliente
         $Celular=$this->ObjCliente->getCelular();
         $Email=$this->ObjCliente->getEmail();
         //---------ARCHIVO PARA CONECTARNOS A LA BASE DE DATOS------------------
-        include("../conexionbd/conexion.php");
+        include("../conexion/conexion.php");
         //--------CONSULTA PARA modificar----------------------------
         $consulta="call modificarcliente('$Cedula','$Nombre','$Apellidos','$Direccion','$Telefono','$Celular','$Email')";
         $resultado=mysqli_query($conexion,$consulta);
@@ -43,7 +43,7 @@ class CtrCliente
         $Celular=$this->ObjCliente->getCelular();
         $Email=$this->ObjCliente->getEmail();
         //---------ARCHIVO PARA CONECTARNOS A LA BASE DE DATOS------------------
-        include("../conexionbd/conexion.php");
+        include("../conexion/conexion.php");
         //--------CONSULTA PARA INSERTAR UN CLIENTE----------------------------
         $consulta="call insertarcliente('$Cedula','$Nombre','$Apellidos','$Direccion','$Telefono','$Celular','$Email')";
         $resultado=mysqli_query($conexion,$consulta);
@@ -61,7 +61,7 @@ class CtrCliente
     {
         $Cedula=$this->ObjCliente->getCedula();
         //---------ARCHIVO PARA CONECTARNOS A LA BASE DE DATOS------------------
-        include("../conexionbd/conexion.php");
+        include("../conexion/conexion.php");
         //--------CONSULTA PARA INSERTAR UN CLIENTE----------------------------
         $consulta="call consultarcliente('$Cedula')";
         $resultado=mysqli_query($conexion,$consulta);
@@ -79,7 +79,7 @@ class CtrCliente
     {
         $Cedula=$this->ObjCliente->getCedula();
         //---------ARCHIVO PARA CONECTARNOS A LA BASE DE DATOS------------------
-        include("../conexionbd/conexion.php");
+        include("../conexion/conexion.php");
         //--------CONSULTA PARA INSERTAR UN CLIENTE----------------------------
         $consulta="call consultarclienteingreso('$Cedula')";
         $resultado=mysqli_query($conexion,$consulta);
@@ -97,7 +97,7 @@ class CtrCliente
     function listar()
     {
         //---------ARCHIVO PARA CONECTARNOS A LA BASE DE DATOS------------------
-        include("../conexionbd/conexion.php");
+        include("../conexion/conexion.php");
         //--------CONSULTA PARA INSERTAR UN CLIENTE----------------------------
         $consulta="call listar_clientes()";
         $resultado=mysqli_query($conexion,$consulta);
@@ -115,7 +115,7 @@ class CtrCliente
     {
         $Cedula=$this->ObjCliente->getCedula();
        //---------ARCHIVO PARA CONECTARNOS A LA BASE DE DATOS------------------
-        include("../conexionbd/conexion.php");
+        include("../conexion/conexion.php");
         //--------CONSULTA PARA eliminar----------------------------
         $consulta="call eliminarcliente('$Cedula')";
         $resultado=mysqli_query($conexion,$consulta);
@@ -128,8 +128,6 @@ class CtrCliente
             return $conexion;
         }
     }
-
-
 
 //---------METODO PARA RETORNAR RESUTLADOS--------------------------------------
     function getResultado()
