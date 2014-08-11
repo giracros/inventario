@@ -1,3 +1,4 @@
 <?php
- $conexion=new mysqli("localhost","root","","inventario")
+
+$conexion = new mysqli("localhost", "root", "", "inventario")
 ?>

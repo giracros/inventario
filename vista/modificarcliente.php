@@ -45,7 +45,7 @@ session_start();
             <div class="starter-template">
                 <h1>Modificar Registro</h1>
                 <form name="Cliente" action="modificarcliente1.php" method="POST" role="form">
-                 
+
                     <div class="form-group">
                         <label for="exampleInputEmail1">Ingrese la Cedula a modificar</label>
                         <input name="Cedula" size="30" class="form-control" id="cedula" placeholder="Cedula">

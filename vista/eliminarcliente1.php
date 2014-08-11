@@ -72,17 +72,17 @@ session_start();
                     </form>
 
 
-    <?php
-} else {
-    $error = $ObjCtrCliente->eliminar();
-    $resultado = $ObjCtrCliente->getResultado();
-    if ($error) {
-        die("Error en la consutla: " . mysqli_error($error));
-    }
-    echo "<script languge='javascript'>alert('El Registro se ha Eliminado')</script>";
-    echo "<script languge='javascript'>location.href='menu.php'</script>";
-}
-?>
+                    <?php
+                } else {
+                    $error = $ObjCtrCliente->eliminar();
+                    $resultado = $ObjCtrCliente->getResultado();
+                    if ($error) {
+                        die("Error en la consutla: " . mysqli_error($error));
+                    }
+                    echo "<script languge='javascript'>alert('El Registro se ha Eliminado')</script>";
+                    echo "<script languge='javascript'>location.href='menu.php'</script>";
+                }
+                ?>
             </div>
 
         </div>

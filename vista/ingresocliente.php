@@ -54,22 +54,22 @@ if (!isset($_SESSION["_PKUsuario"])) {
                             <div class="form-group">
                                 <input name="Cedula" size="30" class="form-control" id="cedula" placeholder="Cedula">
                             </div>
-                             <div class="form-group">
+                            <div class="form-group">
                                 <input name="Nombres" size="30" class="form-control" id="cedula" placeholder="Nombres">
                             </div>
-                             <div class="form-group">
+                            <div class="form-group">
                                 <input name="Apellidos" size="30" class="form-control" id="cedula" placeholder="Apellidos">
                             </div>
-                             <div class="form-group">
+                            <div class="form-group">
                                 <input name="Direccion" size="30" class="form-control" id="cedula" placeholder="Direccion">
                             </div>
-                             <div class="form-group">
+                            <div class="form-group">
                                 <input name="Telefono" size="30" class="form-control" id="cedula" placeholder="Telefono">
                             </div>
-                             <div class="form-group">
+                            <div class="form-group">
                                 <input name="Celular" size="30" class="form-control" id="cedula" placeholder="Celular">
                             </div>
-                             <div class="form-group">
+                            <div class="form-group">
                                 <input name="Email" size="30" class="form-control" id="cedula" placeholder="Email">
                             </div>
                             <button type="submit" name="Guardar" value="Guardar" class="btn btn-default" onclick="return validartexto()">Guardar</button>

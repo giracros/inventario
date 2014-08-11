@@ -1,67 +1,71 @@
 <?php
-class Cliente
-{
-    var $Cedula,$Nombre,$Apellidos,$Direccion,$Telefono,$Celular,$Email;
-    function __construct()
-    {
+
+class Cliente {
+
+    var $Cedula, $Nombre, $Apellidos, $Direccion, $Telefono, $Celular, $Email;
+
+    function __construct() {
+        
     }
+
 //--------METODOS SET-----------------------------------------------------------
-    function setCedula($Cedula)
-    {
-        $this->Cedula=$Cedula;
+    function setCedula($Cedula) {
+        $this->Cedula = $Cedula;
     }
-    function setNombre($Nombre)
-    {
-        $this->Nombre=$Nombre;
+
+    function setNombre($Nombre) {
+        $this->Nombre = $Nombre;
     }
-    function setApellidos($Apellidos)
-    {
-        $this->Apellidos=$Apellidos;
+
+    function setApellidos($Apellidos) {
+        $this->Apellidos = $Apellidos;
     }
-    function setDireccion($Direccion)
-    {
-        $this->Direccion=$Direccion;
+
+    function setDireccion($Direccion) {
+        $this->Direccion = $Direccion;
     }
-    function setTelefono($Telefono)
-    {
-        $this->Telefono=$Telefono;
+
+    function setTelefono($Telefono) {
+        $this->Telefono = $Telefono;
     }
-    function setCelular($Celular)
-    {
-        $this->Celular=$Celular;
+
+    function setCelular($Celular) {
+        $this->Celular = $Celular;
     }
-    function setEmail($Email)
-    {
-        $this->Email=$Email;
+
+    function setEmail($Email) {
+        $this->Email = $Email;
     }
+
 //--------METODOS GET-----------------------------------------------------------
-    function getCedula()
-    {
+    function getCedula() {
         return $this->Cedula;
     }
-    function getNombre()
-    {
+
+    function getNombre() {
         return $this->Nombre;
     }
-    function getApellidos()
-    {
+
+    function getApellidos() {
         return $this->Apellidos;
     }
-    function getDireccion()
-    {
+
+    function getDireccion() {
         return $this->Direccion;
     }
-    function getTelefono()
-    {
+
+    function getTelefono() {
         return $this->Telefono;
     }
-    function getCelular()
-    {
+
+    function getCelular() {
         return $this->Celular;
     }
-    function getEmail()
-    {
+
+    function getEmail() {
         return $this->Email;
     }
+
 }
+
 ?>

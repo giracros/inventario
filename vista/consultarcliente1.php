@@ -70,9 +70,9 @@ session_start();
                             <td>Celular</td>
                             <td>Email</td>
                         </tr>
-    <?php
-    while ($filas = mysqli_fetch_array($resultado)) {
-        ?>
+                        <?php
+                        while ($filas = mysqli_fetch_array($resultado)) {
+                            ?>
                             <tr>
                                 <td><?php echo $filas["Cedula"] ?></td>
                                 <td><?php echo $filas["Nombres"] ?></td>
@@ -83,17 +83,17 @@ session_start();
                                 <td><?php echo $filas["Email"] ?></td>
 
                             </tr>
-        <?php
-    }
-    ?>
+                            <?php
+                        }
+                        ?>
                     </table>
                     <br />
-                        <?php
-                    } else {
-                        echo "El registro que ingreso no existe";
-                        echo "<br /> <a href='consultarcliente.php'>Regresar</a>";
-                    }
-                    ?>
+                    <?php
+                } else {
+                    echo "El registro que ingreso no existe";
+                    echo "<br /> <a href='consultarcliente.php'>Regresar</a>";
+                }
+                ?>
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

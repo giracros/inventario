@@ -86,8 +86,8 @@ session_start();
                     echo "<br /> <a href='menu.php'>Regresar</a>";
                 }
                 ?>
-                
-                
+
+
             </div>
 
         </div>

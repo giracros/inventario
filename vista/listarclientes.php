@@ -69,9 +69,9 @@ session_start();
                             <td>Email</td>
                             <td colspan="2">Accion</td>
                         </tr>
-    <?php
-    while ($filas = mysqli_fetch_array($resultadocliente)) {
-        ?>
+                        <?php
+                        while ($filas = mysqli_fetch_array($resultadocliente)) {
+                            ?>
                             <tr>
                                 <td><?php echo $filas["Cedula"] ?></td>
                                 <td><?php echo $filas["Nombres"] ?></td>
@@ -83,18 +83,18 @@ session_start();
                                 <td><a href = "modificarclientes1.php?Cedula=<?php echo $filas['Cedula'] ?>"/a><img width="32" height="32" alt="Modificar" src="../imagenes/actualizar.ico" alt="" /></a></td>
                                 <td><a href="eliminarcliente1.php?Cedula=<?php echo $filas['Cedula'] ?>" /a><img width="32" height="32" alt="Eliminar" src="../imagenes/eliminar.ico" alt="" /></a> </td>
                             </tr>
-        <?php
-    }
-    ?>
+                            <?php
+                        }
+                        ?>
                     </table>
-                        <?php
-                        echo "<a  href='menu.php'>Menu</a>";
-                    } else {
-                        echo "<center> <br /><br /><br /><br /><br />No existen registros en la tabla<br>";
+                    <?php
+                    echo "<a  href='menu.php'>Menu</a>";
+                } else {
+                    echo "<center> <br /><br /><br /><br /><br />No existen registros en la tabla<br>";
 
-                        echo "<a href='menu.php' >Menu</a></center>";
-                    }
-                    ?>
+                    echo "<a href='menu.php' >Menu</a></center>";
+                }
+                ?>
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

@@ -68,13 +68,13 @@ session_start();
                     <br>
                     <br>
                     <a href="menu.php">Regresar</a>
-    <?php
-} else {
-    $filas = mysqli_fetch_array($resultado);
-    ?>
+                    <?php
+                } else {
+                    $filas = mysqli_fetch_array($resultado);
+                    ?>
                     <form action="guardarmodificarcliente.php" method="post">
                         <table border="1" cellpadding="0" cellspacing="0" >
-                      
+
                             <tr>
                                 <td align="left"><input type="hidden" name="Cedula" id="Cedula" size="15" maxlength="15" value="<?php echo $Cedula; ?>"/></td>
                             </tr>
@@ -108,9 +108,9 @@ session_start();
                         <a class='enlaceboton' href="menu.php">Menu Cliente</a>
                     </form>
                     <br />
-    <?php
-}
-?>
+                    <?php
+                }
+                ?>
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
